@@ -3,10 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "engines": { "node": ">=22" },
   "scripts": {
-    "dev": "vite",
-    "server": "tsx server/index.ts",
-    "build": "vite build"
+    "dev": "node setup.mjs && vite",
+    "server": "node setup.mjs && tsx server/index.ts",
+    "build": "node setup.mjs && vite build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
