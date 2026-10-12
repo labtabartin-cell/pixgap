@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "node setup.mjs && vite",
     "server": "node setup.mjs && tsx server/index.ts",
-    "build": "node setup.mjs && vite build"
+    "build": "node setup.mjs && vite build",
+    "start": "node setup.mjs && node render-server.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
